@@ -294,7 +294,7 @@
       "thumb": "images/objects/obj_008/008thumb.jpg",
       "text": "Tiles showing Richard and Saladin",
       "year": "ca. 1250-60",
-      "location": "Chertsey (North England)"
+      "location": "Chertsey"
     },
     "panel": {
       "subtitle": "Tiles showing Richard and Saladin",
@@ -310,7 +310,7 @@
     },
    "locations": [
   {
-    "label": "Chertsey (North England)",
+    "label": "Chertsey",
     "lat": 51.3886,
     "lng": -0.5074
   },
