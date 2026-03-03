@@ -10,7 +10,7 @@
 //   - Hover marker -> small info tooltip (thumbnail + minimal text)
 //   - Click marker -> right panel (full details)
 // Notes:
-//   - All markers + routes are BLUE (as requested)
+//   - All markers + routes are RED (as requested)
 //   - Multiple routes supported
 // ==============================
 
@@ -32,7 +32,7 @@ let isTransitioning = false;
 // Cancels any in-flight route animations when object changes
 let renderToken = 0;
 
-// ✅ Requested constant colour
+// ✅ Requested constant colour (kept name BLUE to avoid touching other code)
 const BLUE = "#c0392b";
 
 // ---------------- Panel helpers ----------------
@@ -79,7 +79,7 @@ function markerStyleBase(color) {
     opacity: 0,
     color: color,
     fillColor: color,
-    fillOpacity: 0.65
+    fillOpacity: 0.65 // ✅ lighter by default
   };
 }
 
@@ -90,7 +90,7 @@ function markerStyleHover(color) {
     opacity: 0,
     color: color,
     fillColor: color,
-    fillOpacity: 0.95
+    fillOpacity: 0.95 // ✅ darker on hover
   };
 }
 
@@ -101,7 +101,7 @@ function markerStyleSelected(color) {
     opacity: 0,
     color: color,
     fillColor: color,
-    fillOpacity: 1
+    fillOpacity: 1 // ✅ darkest when selected
   };
 }
 
@@ -328,6 +328,8 @@ function addInteractiveMarker(obj, lat, lng, locLabel) {
   });
 
   marker.addTo(markersLayer);
+
+  // ✅ Ensure markers fade back to the BASE opacity (fixes "always dark" look)
   fadeInMarker(marker, marker.__baseStyle.fillOpacity, 400);
 
   return marker;
