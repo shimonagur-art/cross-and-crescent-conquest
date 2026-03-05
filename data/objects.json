@@ -626,18 +626,18 @@
   },
   {
     "id": "obj_016",
-    "title": "Voussoir",
+    "title": "Impost Block",
     "category": "Conquest",
     "tags": [],
     "year": "ca. 1160",
     "hover": {
       "thumb": "images/objects/obj_004/004thumb.jpg",
-      "text": "Voussoir",
+      "text": "Impost Block",
       "year": "ca. 1160",
       "location": "London"
     },
     "panel": {
-      "subtitle": "Voussoir",
+      "subtitle": "Impost Block",
       "body": "This impost block used to be on the western doorway of the Temple Church in London. This church was maintained by the Knights Templar – the group most associated with crusading in the Holy Land – showing how conquest in the Middle East was displayed publicly to those in Christian Europe as a sign of pride.",
       "year": "ca. 1160",
       "images": [
